@@ -1,10 +1,15 @@
 correct1 = "car"
 correct2 = "pie"
-word1 = True
+word1 = False
 word2 = False
 guess = ""
 guess_counter = 0
 
+fc = input("Hello what type of word would you like to guess? \n You can choose between food and vehicle")
+if fc == "food":
+  word2 = True
+elif fc == "vehicle"
+  word1 = True
 while word1 == True:
   while guess != correct1:
     guess = input("Guess the word: ")
