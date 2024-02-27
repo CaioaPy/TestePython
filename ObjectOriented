@@ -1,1 +1,24 @@
-
+x = 1
+y = "r"
+z = 1.1
+e = "spa"
+class mouse:
+  def use(self):
+    print("*click*")
+def ds():
+  print("me")
+mo = mouse()
+print("==Types==")
+print(type(x))
+print(type(y))
+print(type(z))
+print(type(ds))
+print(type(mo))
+print("\n")
+print("==Operations==")
+print(x + z)
+print(e + y)
+print(str(x) + str(z))
+print("\n")
+print("==Class==")
+mo.use()
