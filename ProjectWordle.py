@@ -1,5 +1,5 @@
-correct1 = "car"
-correct2 = "pie"
+correct1 = "bus"
+correct2 = "rice"
 word1 = False
 word2 = False
 guess = ""
