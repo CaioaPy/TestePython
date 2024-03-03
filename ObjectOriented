@@ -1,0 +1,39 @@
+x = 1
+y = "r"
+z = 1.1
+e = "spa"
+clicks = 0
+class mouse:
+  def __init__(self, color):
+    self.color = color
+  def use(self):
+    global clicks
+    clicks += 1
+    print("*click*\n1 click addeded to the total!(" + str(clicks) + ")")
+  def total(self):
+    return clicks
+def ds():
+  print("me")
+mo = mouse("Black")
+mw = mouse("White")
+print("==Types==")
+print(type(x))
+print(type(y))
+print(type(z))
+print(type(ds))
+print(type(mo))
+print("\n")
+print("==Operations==")
+print(x + z)
+print(e + y)
+print(str(x) + str(z))
+print("\n")
+print("==Class==")
+print(mo.color)
+print(mw.color)
+mo.use()
+mo.use()
+mo.use()
+mw.use()
+mw.use()
+print("total clicks = " + str(mo.total()))
