@@ -7,4 +7,4 @@ que = input("Do you want to see the list of students?")
 if que == "yes":
     print(list)
 elif que != "yes":
-    print("Ok, that's all!")
+    print("Ok, that's all! Thank you!")
