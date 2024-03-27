@@ -1,6 +1,6 @@
 import openai
 
-openai.api_key = "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"
+openai.api_key = ""
 
 def chat(prompt):
     response = openai.ChatCompletion(
