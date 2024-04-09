@@ -3,7 +3,7 @@ from tkinter import *
 root = Tk()
 root.title("Calculator")
 
-title = Label(root, text="calculator")
+title = Label(root, text="placeholder")
 button1 = Button(root, text="1", padx=35, pady=35)
 button2 = Button(root, text="2", padx=35, pady=35)
 button3 = Button(root, text="3", padx=35, pady=35)
