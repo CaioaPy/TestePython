@@ -7,9 +7,9 @@ Vtext = ""
 title = Label(root, text= Vtext)
 
 def click1():
-    Vtext = 1
+    Vtext = "1"
 def click2():
-    Vtext = 2
+    Vtext = "2"
 button1 = Button(root, text="1", padx=35, pady=35, command= click1)
 button2 = Button(root, text="2", padx=35, pady=35, command= click2)
 button3 = Button(root, text="3", padx=35, pady=35)
