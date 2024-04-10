@@ -13,6 +13,7 @@ button6 = Button(root, text="6", padx=35, pady=35)
 button7 = Button(root, text="7", padx=35, pady=35)
 button8 = Button(root, text="8", padx=35, pady=35)
 button9 = Button(root, text="9", padx=35, pady=35)
+button0 = Button(root, text="0", padx=35, pady=35)
 
 
 title.grid(row=0 , column=1)
@@ -25,5 +26,6 @@ button6.grid(row=2, column=2)
 button7.grid(row=3, column=0)
 button8.grid(row=3, column=1)
 button9.grid(row=3, column=2)
+button0.grid(row=4, column=1)
 
 root.mainloop()
