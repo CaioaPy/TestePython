@@ -11,7 +11,7 @@ map = [
 print("Hello and welcome to the teasure hunt! Im gonna show you some cordinates, and then you have to find the teasure!")
 print(str(map))
 while te != "yes":
-  te = input("Have you understood what the map?")
+  te = input("Have you understood the map?")
   if te != "yes":
     print("Ok, I will show you the map again.\n" + str(map))
 print("Ok then, lets start!")
