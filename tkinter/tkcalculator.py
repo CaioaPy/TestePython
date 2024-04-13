@@ -6,10 +6,18 @@ root.title("Calculator")
 e = Entry(root, width=35, borderwidth=3)
 e.grid(row=0, column=0, columnspan=3, padx=10, pady=30)
 
-Vtext = ""
+Result = 0
+
 
 def click(num):
     e.insert(0, num)
+    return
+def clear(clear):
+    e.delete(0, END)
+    e.insert(0, clear)
+    return
+def result(num, num2):
+    Result = num + num2
     return
 
 button1 = Button(root, text="1", padx=35, pady=35, command=lambda: click(1))
@@ -22,12 +30,12 @@ button7 = Button(root, text="7", padx=35, pady=35, command=lambda: click(7))
 button8 = Button(root, text="8", padx=35, pady=35, command=lambda: click(8))
 button9 = Button(root, text="9", padx=35, pady=35, command=lambda: click(9))
 button0 = Button(root, text="0", padx=35, pady=35, command=lambda: click(0))
-buttonR = Button(root, text="=", padx=35, pady=35, command=lambda: click())
+buttonR = Button(root, text="=", padx=35, pady=35, command=lambda: result())
 buttonAdd = Button(root, text="+", padx=35, pady=35, command=lambda: click())
 buttonSub = Button(root, text="-", padx=35, pady=35, command=lambda: click())
 buttonDiv = Button(root, text="/", padx=35, pady=35, command=lambda: click())
 buttonMul = Button(root, text="*", padx=35, pady=35, command=lambda: click())
-buttonClear = Button(root, text="C", padx=35, pady=35, command=lambda: click())
+buttonClear = Button(root, text="C", padx=35, pady=35, command=lambda: clear(0))
 
 
 button1.grid(row=3, column=0)

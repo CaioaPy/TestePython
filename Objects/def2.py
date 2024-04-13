@@ -4,7 +4,5 @@ def greet(name, age, city):
     city
     return
 
-test = greet("oi", "12", "aw")
-print(test)
-print(age)
-print(city)
+test = greet("oi")
+print (test)
