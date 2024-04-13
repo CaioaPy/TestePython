@@ -1,8 +1,5 @@
 def greet(name, age, city):
-    f"hello {name}" 
-    age 
-    city
-    return
+    return f"hello {name}. \n {age} years, from {city}... looks good, welcome"
 
-test = greet("oi")
-print (test)
+test = greet("oi", 12, "aw")
+print(test)
