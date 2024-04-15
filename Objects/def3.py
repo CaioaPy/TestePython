@@ -7,5 +7,4 @@ def quadrado():
     y = y * y
     print(x)
     print(y)
-    return
 quadrado()
