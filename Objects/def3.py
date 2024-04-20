@@ -1,10 +1,10 @@
-x = 4
-y = 2
+x = input("x= ?")
+y = input("y= ?")
 
 
-def quadrado():
-    x = x * x
-    y = y * y
+def quadrado(x, y):
+    x = int(x) * int(x)
+    y = int(y) * int(y)
     print(x)
     print(y)
-quadrado()
+quadrado(x, y)
