@@ -14,3 +14,4 @@ def turn_on():
     
     else:
         print("Ligado!")
+turn_on()
