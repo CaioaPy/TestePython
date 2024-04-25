@@ -6,9 +6,12 @@ def listadd():
         first = True
     else:
         first = False
-    if first :
+        return
+    if first == True:
         list.insert(0, add)
-    else:
-        list.insert(add)
+    elif first == False:
+        list.append(add)
 listadd()
 print(list)
+def listaremove():
+    remove = input("what would you like to remove from the list?")
