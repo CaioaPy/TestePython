@@ -6,7 +6,6 @@ def listadd():
         first = True
     else:
         first = False
-        return
     if first == True:
         list.insert(0, add)
     elif first == False:
