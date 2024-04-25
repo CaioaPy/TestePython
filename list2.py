@@ -17,3 +17,9 @@ def listaremove():
 match input("do you want to see, add or remove from list?"):
     case "see":
         print(list)
+    case "add":
+        listadd()
+    case "remove":
+        listaremove()
+    case _:
+        print("Invalid")
