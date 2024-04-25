@@ -2,8 +2,9 @@ import json
 
 list = []
 def uploadjson():
-    data = list
-    json.dumps(data)
+    upload = json.dumps(list)
+    with open(upload.json, "w") as f:
+        json.dumps(upload, f)
 def listadd():
     add = input("what would you like to add to the list?")
     my_bool = input("that should be added at the first position? (yes/no)")
