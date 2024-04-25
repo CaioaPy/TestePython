@@ -11,7 +11,9 @@ def listadd():
         list.insert(0, add)
     elif first == False:
         list.append(add)
-listadd()
-print(list)
 def listaremove():
     remove = input("what would you like to remove from the list?")
+
+match input("do you want to see, add or remove from list?"):
+    case "see":
+        print(list)
