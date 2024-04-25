@@ -1,10 +1,12 @@
 import json
+with open("upload.json", "r") as f_in:
+    data = json.load(f_in)
 
 list = []
+list.append(data)
 def uploadjson():
-    upload = json.dumps(list)
-    with open(upload.json, "w") as f:
-        json.dumps(upload, f)
+    with open("upload.json", "w") as f:
+        json.dump(list, f)
 def listadd():
     add = input("what would you like to add to the list?")
     my_bool = input("that should be added at the first position? (yes/no)")
