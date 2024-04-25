@@ -13,7 +13,7 @@ def listadd():
         list.append(add)
 def listaremove():
     remove = input("what would you like to remove from the list?")
-
+    list.remove(remove)
 match input("do you want to see, add or remove from list?"):
     case "see":
         print(list)
