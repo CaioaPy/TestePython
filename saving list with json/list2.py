@@ -4,6 +4,7 @@ with open("upload.json", "r") as f_in:
 
 list = []
 list.append(data)
+
 def uploadjson():
     with open("upload.json", "w") as f:
         json.dump(list, f)
@@ -15,6 +16,7 @@ def listadd():
         first = True
     else:
         first = False
+    
     if first == True:
         list.insert(0, add)
     elif first == False:
