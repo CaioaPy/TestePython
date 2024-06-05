@@ -6,6 +6,9 @@ class Bicicleta:
         self.valor = valor
         self.movimento = movimento
 
+    def __str__(self):
+        return f"Bicileta: cor = {self.cor}, modelo = {self.modelo}, ano = {self.ano}, valor = {self.valor} e movimento = {self.movimento}"
+
     def buzinar(self):
         print("*bibi*")
     
@@ -16,7 +19,10 @@ class Bicicleta:
     def mover(self):
         movimento = True
         print("a bicicleta começou a se mover")
+
     
 bicicleta1 = Bicicleta("azul", "nova", "2024", 1900)
 
 bicicleta1.buzinar()
+
+print(bicicleta1)
