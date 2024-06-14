@@ -1,8 +1,9 @@
 import json
+list = []
+
 with open("upload.json", "r") as f_in:
     data = json.load(f_in)
 
-list = []
 list.append(data)
 
 def uploadjson():
