@@ -9,9 +9,9 @@ class Carro(Veiculo):
         super().__init__(cor, modelo, ano)
         self.carregado = carregado
 
-    def Novacor(cor2):
+    def Novacor(self, cor2):
         print(f"Cor alterada de {self.cor} para {cor2}")
 
-carro = Carro("azul", "novo", 1942)
+carro = Carro("azul", "novo", 1942, False)
 
 carro.Novacor("preto")
