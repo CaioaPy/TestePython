@@ -1,6 +1,10 @@
 from tkinter import *
 
 root = Tk()
+root.title("icons")
+root.iconbitmap('C:/Users/User/Downloads/0v0.ico')
+
+
 e = Entry(root, borderwidth=3)
 e.pack()
 
