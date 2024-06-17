@@ -12,13 +12,11 @@ Result = 0
 def click(num):
     e.insert(0, num)
     return
-def clear(clear):
+def clear():
     e.delete(0, END)
     e.insert(0, clear)
     return
-def result(num, num2):
-    Result = num + num2
-    return
+
 
 button1 = Button(root, text="1", padx=35, pady=35, command=lambda: click(1))
 button2 = Button(root, text="2", padx=35, pady=35, command=lambda: click(2))
@@ -30,13 +28,11 @@ button7 = Button(root, text="7", padx=35, pady=35, command=lambda: click(7))
 button8 = Button(root, text="8", padx=35, pady=35, command=lambda: click(8))
 button9 = Button(root, text="9", padx=35, pady=35, command=lambda: click(9))
 button0 = Button(root, text="0", padx=35, pady=35, command=lambda: click(0))
-buttonR = Button(root, text="=", padx=35, pady=35, command=lambda: result())
-buttonAdd = Button(root, text="+", padx=35, pady=35, command=lambda: click())
-buttonSub = Button(root, text="-", padx=35, pady=35, command=lambda: click())
-buttonDiv = Button(root, text="/", padx=35, pady=35, command=lambda: click())
-buttonMul = Button(root, text="*", padx=35, pady=35, command=lambda: click())
-buttonClear = Button(root, text="C", padx=35, pady=35, command=lambda: clear(0))
-
+buttonAdd = Button(root, text="+", padx=35, pady=35, command=lambda: click("+"))
+buttonSub = Button(root, text="-", padx=35, pady=35, command=lambda: click("-"))
+buttonDiv = Button(root, text="/", padx=35, pady=35, command=lambda: click("/"))
+buttonMul = Button(root, text="*", padx=35, pady=35, command=lambda: click("*"))
+buttonClear = Button(root, text="C", padx=35, pady=35, command=lambda: clear())
 
 button1.grid(row=3, column=0)
 button2.grid(row=3, column=1)
@@ -48,7 +44,6 @@ button7.grid(row=1, column=0)
 button8.grid(row=1, column=1)
 button9.grid(row=1, column=2)
 button0.grid(row=4, column=1)
-buttonR.grid(row=4, column=3)
 buttonAdd.grid(row=0, column=3)
 buttonSub.grid(row=1, column=3)
 buttonDiv.grid(row=2, column=3)
