@@ -6,12 +6,11 @@ root.title("Calculator")
 e = Entry(root, width=35, borderwidth=3)
 e.grid(row=0, column=0, columnspan=3, padx=10, pady=30)
 
-Result = 0
 sumV = 0
 minusV = 0
 divideV = 0
 multiplyV = 0
-num1
+num1 = 0
 
 def click(num):
     current = e.get()
@@ -57,14 +56,13 @@ def multiply():
 def result():
     num2 = e.get()
     if (sumV == 1):
-        Result = num1 + num2
+        Result = int(num1) + int(num2)
     elif (minusV == 1):
-        Result = num1 - num2
+        Result = int(num1) - int(num2)
     elif (divideV == 1):
-        Result = num1 / num2
+        Result = int(num1) / int(num2)
     elif (multiplyV == 1):
-        Result = num1 * num2
-        
+        Result = int(num1) * int(num2)
     e.delete(0, END)
     e.insert(0, Result)
 
