@@ -11,6 +11,7 @@ sumV = 0
 minusV = 0
 divideV = 0
 multiplyV = 0
+num1
 
 def click(num):
     current = e.get()
@@ -22,27 +23,50 @@ def clear():
     e.insert(0, " ")
 
 def sum():
+    global sumV
     sumV += 1
+    global num1
+    num1 = e.get()
     e.delete(0, END)
     e.insert(0, " ")
 
 def minus():
+    global minusV
     minusV += 1
+    global num1
+    num1 = e.get()
     e.delete(0, END)
     e.insert(0, " ")
 
 def divide():
+    global divideV
     divideV += 1
+    global num1
+    num1 = e.get()
     e.delete(0, END)
     e.insert(0, " ")
 
 def multiply():
+    global multiplyV
     multiplyV += 1
+    global num1
+    num1 = e.get()
     e.delete(0, END)
     e.insert(0, " ")
 
 def result():
-    if (sumV == 1)
+    num2 = e.get()
+    if (sumV == 1):
+        Result = num1 + num2
+    elif (minusV == 1):
+        Result = num1 - num2
+    elif (divideV == 1):
+        Result = num1 / num2
+    elif (multiplyV == 1):
+        Result = num1 * num2
+        
+    e.delete(0, END)
+    e.insert(0, Result)
 
 button1 = Button(root, text="1", padx=35, pady=35, command=lambda: click(1))
 button2 = Button(root, text="2", padx=35, pady=35, command=lambda: click(2))
@@ -54,10 +78,10 @@ button7 = Button(root, text="7", padx=35, pady=35, command=lambda: click(7))
 button8 = Button(root, text="8", padx=35, pady=35, command=lambda: click(8))
 button9 = Button(root, text="9", padx=35, pady=35, command=lambda: click(9))
 button0 = Button(root, text="0", padx=35, pady=35, command=lambda: click(0))
-buttonAdd = Button(root, text="+", padx=35, pady=35, command=lambda: click("+"))
-buttonSub = Button(root, text="-", padx=35, pady=35, command=lambda: click("-"))
-buttonDiv = Button(root, text="/", padx=35, pady=35, command=lambda: click("/"))
-buttonMul = Button(root, text="*", padx=35, pady=35, command=lambda: click("*"))
+buttonAdd = Button(root, text="+", padx=35, pady=35, command=lambda: sum())
+buttonSub = Button(root, text="-", padx=35, pady=35, command=lambda: minus())
+buttonDiv = Button(root, text="/", padx=35, pady=35, command=lambda: divide())
+buttonMul = Button(root, text="*", padx=35, pady=35, command=lambda: multiply())
 buttonClear = Button(root, text="C", padx=35, pady=35, command=lambda: clear())
 buttonResult = Button(root, text="=", padx=70, pady=35, command=lambda: result())
 
