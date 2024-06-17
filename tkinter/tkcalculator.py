@@ -49,3 +49,5 @@ buttonSub.grid(row=1, column=3)
 buttonDiv.grid(row=2, column=3)
 buttonMul.grid(row=3, column=3)
 buttonClear.grid(row=0, column=2)
+
+root.mainloop()
