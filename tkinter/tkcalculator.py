@@ -11,12 +11,14 @@ Result = 0
 
 def click(num):
     e.insert(0, num)
-    return
+
 def clear():
     e.delete(0, END)
-    e.insert(0, clear)
-    return
+    e.insert(0, " ")
 
+
+def result():
+    holder
 
 button1 = Button(root, text="1", padx=35, pady=35, command=lambda: click(1))
 button2 = Button(root, text="2", padx=35, pady=35, command=lambda: click(2))
@@ -33,6 +35,7 @@ buttonSub = Button(root, text="-", padx=35, pady=35, command=lambda: click("-"))
 buttonDiv = Button(root, text="/", padx=35, pady=35, command=lambda: click("/"))
 buttonMul = Button(root, text="*", padx=35, pady=35, command=lambda: click("*"))
 buttonClear = Button(root, text="C", padx=35, pady=35, command=lambda: clear())
+buttonResult = Button(root, text="=", padx=70, pady=35, command=lambda: result())
 
 button1.grid(row=3, column=0)
 button2.grid(row=3, column=1)
@@ -49,5 +52,6 @@ buttonSub.grid(row=1, column=3)
 buttonDiv.grid(row=2, column=3)
 buttonMul.grid(row=3, column=3)
 buttonClear.grid(row=0, column=2)
+buttonResult.grid(row=4, column=2, columnspan=2)
 
 root.mainloop()
