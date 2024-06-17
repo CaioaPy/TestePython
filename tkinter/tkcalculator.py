@@ -7,18 +7,42 @@ e = Entry(root, width=35, borderwidth=3)
 e.grid(row=0, column=0, columnspan=3, padx=10, pady=30)
 
 Result = 0
-
+sumV = 0
+minusV = 0
+divideV = 0
+multiplyV = 0
 
 def click(num):
-    e.insert(0, num)
+    current = e.get()
+    e.delete(0, END)
+    e.insert(0, str(current) + str(num))
 
 def clear():
     e.delete(0, END)
     e.insert(0, " ")
 
+def sum():
+    sumV += 1
+    e.delete(0, END)
+    e.insert(0, " ")
+
+def minus():
+    minusV += 1
+    e.delete(0, END)
+    e.insert(0, " ")
+
+def divide():
+    divideV += 1
+    e.delete(0, END)
+    e.insert(0, " ")
+
+def multiply():
+    multiplyV += 1
+    e.delete(0, END)
+    e.insert(0, " ")
 
 def result():
-    holder
+    if (sumV == 1)
 
 button1 = Button(root, text="1", padx=35, pady=35, command=lambda: click(1))
 button2 = Button(root, text="2", padx=35, pady=35, command=lambda: click(2))
