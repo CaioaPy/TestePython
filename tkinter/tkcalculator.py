@@ -18,8 +18,10 @@ def click(num):
     e.insert(0, str(current) + str(num))
 
 def clear():
+    global num1
     e.delete(0, END)
     e.insert(0, " ")
+    num1 = 0
 
 def sum():
     global sumV

@@ -25,10 +25,10 @@ imgC = ImageTk.PhotoImage(resize_C)
 imgD = ImageTk.PhotoImage(resize_D)
 
 
-buttonA = Button(image=imgA, command= lambda: click("A"))
-buttonB = Button(image=imgB, command= lambda: click("B"))
-buttonC = Button(image=imgC, command= lambda: click("C"))
-buttonD = Button(image=imgD, command= lambda: click("D"))
+buttonA = Button(image=imgA, command=lambda: click("A"))
+buttonB = Button(image=imgB, command=lambda: click("B"))
+buttonC = Button(image=imgC, command=lambda: click("C"))
+buttonD = Button(image=imgD, command=lambda: click("D"))
 
 buttonA.grid(row=0, column=0)
 buttonB.grid(row=0, column=1)
