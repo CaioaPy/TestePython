@@ -3,9 +3,11 @@ from PIL import ImageTk,Image
 
 root = Tk()
 root.title("wow")
-icon_img = ImageTk.PhotoImage(Image.open("A.JPEG"))
-root.iconbitmap(icon_img)
+root.iconbitmap('C:/Users/User/Documents/programa acao/TestePython/tkinter/img/0v0.ico')
 
+buttonA = Button(text="a")
+imgA = ImageTk.PhotoImage(Image.open("A.JPEG"))
 
+buttonA.pack()
 
 root.mainloop()
