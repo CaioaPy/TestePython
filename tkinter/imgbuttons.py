@@ -5,6 +5,10 @@ root = Tk()
 root.title("wow")
 root.iconbitmap('C:/Users/User/Documents/programa acao/TestePython/tkinter/img/0v0.ico')
 
+def click(letter):
+    label = Label(root, text=f"you clicked the image {letter}!")
+    label.grid(row=0, column=2)
+
 iA = Image.open("A.JPEG")
 iB = Image.open("B.JPEG")
 iC = Image.open("C.JPEG")
@@ -21,10 +25,10 @@ imgC = ImageTk.PhotoImage(resize_C)
 imgD = ImageTk.PhotoImage(resize_D)
 
 
-buttonA = Button(text="a", image=imgA)
-buttonB = Button(text="a", image=imgB)
-buttonC = Button(text="a", image=imgC)
-buttonD = Button(text="a", image=imgD)
+buttonA = Button(image=imgA, command= lambda: click("A"))
+buttonB = Button(image=imgB, command= lambda: click("B"))
+buttonC = Button(image=imgC, command= lambda: click("C"))
+buttonD = Button(image=imgD, command= lambda: click("D"))
 
 buttonA.grid(row=0, column=0)
 buttonB.grid(row=0, column=1)
