@@ -15,9 +15,9 @@ buttonB = Button(text="a", image=imgB)
 buttonC = Button(text="a", image=imgC)
 buttonD = Button(text="a", image=imgD)
 
-buttonA.pack()
-buttonB.pack()
-buttonC.pack()
-buttonD.pack()
+buttonA.grid(row=0, column=0)
+buttonB.grid(row=0, column=1)
+buttonC.grid(row=1, column=0)
+buttonD.grid(row=1, column=1)
 
 root.mainloop()
